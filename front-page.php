@@ -1,7 +1,11 @@
 <?php get_header(); ?>
 
-<h1>This is just some random text</h1>
-
-<h2>Please Delete me later</h2>
+<div id="front-page-hero">
+	<img src="/portfolio-wp/wp-content/uploads/2016/05/black-and-white-man-person-hands.jpg" alt="man at computer" />
+	<div id="front-page-hero-text">
+		<h2>Nate Conley</h2>
+		<h3>Front End Web Developer</h3>
+	</div>
+</div>
 
 <?php get_footer(); ?>

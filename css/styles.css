@@ -1,3 +1,46 @@
+#front-page-hero {
+  position: relative; }
+  #front-page-hero img {
+    width: 100vw;
+    height: auto;
+    top: 0;
+    left: 0;
+    display: block; }
+  #front-page-hero #front-page-hero-text {
+    color: #FFFFFF;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 2rem;
+    left: 0; }
+    #front-page-hero #front-page-hero-text h2,
+    #front-page-hero #front-page-hero-text h3 {
+      background: rgba(0, 0, 0, 0.5);
+      padding: .5rem 0;
+      margin: 0; }
+    #front-page-hero #front-page-hero-text h2 {
+      font-size: 4rem;
+      margin-bottom: 1rem; }
+    #front-page-hero #front-page-hero-text h3 {
+      font-size: 3rem; }
+    @media screen and (max-width: 400px) {
+      #front-page-hero #front-page-hero-text h2 {
+        font-size: 3rem; }
+      #front-page-hero #front-page-hero-text h3 {
+        font-size: 2rem; } }
+
+body {
+  max-width: 100vw; }
+
+:root {
+  font-size: 16px; }
+  @media screen and (max-width: 650px) {
+    :root {
+      font-size: 15px; } }
+  @media screen and (max-width: 400px) {
+    :root {
+      font-size: 14px; } }
+
 header {
   width: 100%;
   background: #5D747C; }
@@ -16,18 +59,24 @@ nav ul#menu-main-menu {
   justify-content: space-around;
   padding: 1rem 0;
   max-width: 1000px;
-  margin: auto; }
+  margin: auto;
+  border-bottom: 2px dashed #FFFFFF; }
   nav ul#menu-main-menu li a {
     color: #FFFFFF;
     text-decoration: none;
     font-size: 1.5rem; }
     nav ul#menu-main-menu li a:hover {
       color: #DDDDDD; }
+  @media screen and (max-width: 650px) {
+    nav ul#menu-main-menu {
+      display: block; }
+      nav ul#menu-main-menu li a {
+        display: block;
+        text-align: center;
+        padding-bottom: .5rem; } }
 
 footer {
   background: #5D747C;
-  bottom: 0;
-  position: absolute;
   width: 100%; }
   footer .footer-content {
     width: 100%;
@@ -37,7 +86,6 @@ footer {
     justify-content: space-around; }
   footer .footer-copyright {
     color: #FFFFFF;
-    height: 1rem;
     line-height: 2rem; }
   footer ul.social-links {
     list-style: none;
@@ -52,8 +100,11 @@ footer {
         footer ul.social-links li a i:hover {
           color: #DDDDDD; }
   @media screen and (max-width: 650px) {
-    footer .footer-content {
-      display: block; }
-      footer .footer-content .footer-copyright,
-      footer .footer-content .social-links {
-        text-align: center; } }
+    footer {
+      padding: .5rem 0; }
+      footer .footer-content {
+        display: block; }
+        footer .footer-content .footer-copyright,
+        footer .footer-content .social-links {
+          text-align: center;
+          margin: 0; } }

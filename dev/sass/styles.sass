@@ -9,6 +9,20 @@ $black: #000000
 $maxwidth: 1000px
 
 $breakmedium: 650px
+$breaksmall: 400px
+
+// Imports
+@import "front-page"
+
+// General styles
+body
+	max-width: 100vw
+\:root
+	font-size: 16px		// Root font-size
+	@media screen and (max-width: $breakmedium)
+		font-size: 15px
+	@media screen and (max-width: $breaksmall)
+		font-size: 14px
 
 // Header Styles
 header
@@ -32,18 +46,23 @@ nav
 		padding: 1rem 0
 		max-width: $maxwidth
 		margin: auto
+		border-bottom: 2px dashed $white
 		li a
 			color: $white
 			text-decoration: none
 			font-size: 1.5rem
 			&:hover
 				color: $lightgrey
+		@media screen and (max-width: $breakmedium)
+			display: block
+			li a
+				display: block
+				text-align: center
+				padding-bottom: .5rem
 
 // Footer Styles
 footer
 	background: $grey
-	bottom: 0
-	position: absolute
 	width: 100%
 	.footer-content
 		width: 100%
@@ -53,13 +72,10 @@ footer
 		justify-content: space-around
 	.footer-copyright
 		color: $white
-		// width: 50%
-		height: 1rem
 		line-height: 2rem
 	ul.social-links
 		list-style: none
 		padding: 0
-		// width: 50%
 		li
 			display: inline-block
 			a i
@@ -70,8 +86,10 @@ footer
 				&:hover
 					color: $lightgrey
 	@media screen and (max-width: $breakmedium)
+		padding: .5rem 0
 		.footer-content
 			display: block
 			.footer-copyright,
 			.social-links
 				text-align: center
+				margin: 0
