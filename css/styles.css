@@ -1,3 +1,15 @@
+header {
+  width: 100%;
+  background: #5D747C; }
+  header h1 {
+    display: none; }
+  header img {
+    display: block;
+    margin: auto;
+    padding: 2rem 0;
+    height: 10rem;
+    width: 10rem; }
+
 nav {
   border-bottom: 2px dashed #FFFFFF; }
   nav ul#menu-main-menu {
@@ -84,24 +96,30 @@ footer {
       font-size: 3rem; }
     @media screen and (max-width: 650px) {
       #front-page-hero #front-page-hero-text h2 {
-        font-size: 3.5rem; }
-      #front-page-hero #front-page-hero-text h3 {
-        font-size: 2.5rem; } }
-    @media screen and (max-width: 400px) {
-      #front-page-hero #front-page-hero-text h2 {
         font-size: 3rem; }
       #front-page-hero #front-page-hero-text h3 {
         font-size: 2rem; } }
+    @media screen and (max-width: 400px) {
+      #front-page-hero #front-page-hero-text h2 {
+        font-size: 2.5rem; }
+      #front-page-hero #front-page-hero-text h3 {
+        font-size: 1.5rem; } }
 
-.single-content {
-  margin: 1.5rem; }
-  .single-content img {
-    display: block;
-    margin: auto;
-    min-width: 50%;
-    height: auto;
-    border: 3px solid #000000;
-    border-radius: 6px; }
+.single-content img {
+  display: block;
+  margin: auto;
+  min-width: 50%;
+  height: auto;
+  border: 3px solid #000000;
+  border-radius: 6px; }
+
+.error-page {
+  text-align: center;
+  min-height: 50vh; }
+  .error-page h2 {
+    font-size: 4rem; }
+  .error-page h3 {
+    font-size: 2rem; }
 
 body {
   max-width: 100vw; }
@@ -117,7 +135,8 @@ body {
 
 .container {
   max-width: 1000px;
-  margin: auto; }
+  margin: auto;
+  padding: 0 1.5rem; }
 
 h1,
 h2,
@@ -130,24 +149,22 @@ p {
   font-family: "ff-tisa-web-pro", serif; }
 
 .post-title,
-.author {
+.author,
+.date {
   text-align: center;
   font-family: "proxima-nova", sans-serif; }
 
 .post-title {
-  font-size: 2rem; }
+  font-size: 2rem;
+  margin: 0; }
+
+.page-title {
+  text-align: center; }
+  .page-title h2 {
+    font-size: 3rem; }
+
+.date {
+  color: #5D747C; }
 
 .proxima-nova {
   font-family: "proxima-nova", sans-serif; }
-
-header {
-  width: 100%;
-  background: #5D747C; }
-  header h1 {
-    display: none; }
-  header img {
-    display: block;
-    margin: auto;
-    padding: 2rem 0;
-    height: 10rem;
-    width: 10rem; }

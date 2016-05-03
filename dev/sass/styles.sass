@@ -15,10 +15,12 @@ $breakmedium: 650px
 $breaksmall: 400px
 
 // Imports
+@import "header"
 @import "navigation"
 @import "footer"
 @import "front-page"
 @import "single"
+@import "error-page"
 
 
 // General styles
@@ -33,39 +35,42 @@ body
 .container
 	max-width: $maxwidth
 	margin: auto
+	padding: 0 1.5rem
 
+// Font-family
 h1,
 h2,
 h3,
 h4,
 h5
 	font-family: $proximanova
-
 p
 	font-family: $tisa
 
 // Helper classes
 .post-title,
-.author
+.author,
+.date
 	text-align: center
 	font-family: $proximanova
+
 .post-title
 	font-size: 2rem
+	margin: 0
+
+.page-title
+	text-align: center
+	h2
+		font-size: 3rem
+
+.date
+	color: $grey
+
 .proxima-nova
 	font-family: $proximanova
 
-// Header Styles
-header
-	width: 100%
-	background: $grey
-	h1
-		display: none
-	img
-		display: block
-		margin: auto
-		padding: 2rem 0
-		height: 10rem
-		width: 10rem
+
+
 
 
 

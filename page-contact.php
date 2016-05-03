@@ -1,6 +1,6 @@
 <?php
 /*
-	Template Name: About Me
+	Template Name: Contact Page
 */
 ?>
 
@@ -11,13 +11,6 @@
 	<div class="page-title">
 		<h2><?php wp_title($sep = ''); ?></h2>
 	</div>
-
-	<?php the_post(); ?>
-
-	<p><?php the_content(); ?></p>
-
 </div>
-
-<?php the_post(); ?>
 
 <?php get_footer(); ?>

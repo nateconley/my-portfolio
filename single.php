@@ -6,6 +6,9 @@
 
 		<h2 class="post-title"><?php the_title(); ?></h2>
 		<p class="author">by <?php the_author(); ?></p>
+		<p class="date"><?php the_date(); ?></p>
+
+		<hr>
 
 		<p><?php the_content(); ?></p>
 
