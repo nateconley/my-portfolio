@@ -3,6 +3,9 @@
 	<head>
 		<title><?php bloginfo('name'); ?></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- TypeKit -->
+		<script src="https://use.typekit.net/iwo5urq.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 		<?php wp_head(); ?>
 	</head>
 	<header>

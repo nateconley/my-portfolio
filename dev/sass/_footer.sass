@@ -1,0 +1,33 @@
+// Footer Styles
+footer
+	background: $grey
+	width: 100%
+	.footer-content
+		width: 100%
+		max-width: $maxwidth
+		margin: auto
+		display: flex
+		justify-content: space-around
+	.footer-copyright
+		color: $white
+		line-height: 2rem
+	ul.social-links
+		list-style: none
+		padding: 0
+		li
+			display: inline-block
+			a i
+				color: $white
+				display: inline-block
+				vertical-align: middle
+				padding: 0 .5rem
+				&:hover
+					color: $lightgrey
+	@media screen and (max-width: $breakmedium)
+		padding: .5rem 0
+		.footer-content
+			display: block
+			.footer-copyright,
+			.social-links
+				text-align: center
+				margin: 0

@@ -1,6 +1,6 @@
 		<footer>
 			<div class="footer-content">
-				<p class="footer-copyright">&copy; <?php echo date('Y'); ?> Nate Conley</p>
+				<p class="footer-copyright proxima-nova">&copy; <?php echo date('Y'); ?> Nate Conley</p>
 				<ul class="social-links">
 					<li>
 						<a href="http://www.github.com/nateconley" target="_blank">

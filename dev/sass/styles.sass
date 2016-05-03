@@ -6,23 +6,53 @@ $lightgrey: #DDDDDD
 $white: #FFFFFF
 $black: #000000
 
+$proximanova : 'proxima-nova', sans-serif
+$tisa: 'ff-tisa-web-pro', serif
+
 $maxwidth: 1000px
 
 $breakmedium: 650px
 $breaksmall: 400px
 
 // Imports
+@import "navigation"
+@import "footer"
 @import "front-page"
+@import "single"
+
 
 // General styles
 body
 	max-width: 100vw
 \:root
-	font-size: 16px		// Root font-size
+	font-size: 20px		// Root font-size
 	@media screen and (max-width: $breakmedium)
-		font-size: 15px
+		font-size: 18px
 	@media screen and (max-width: $breaksmall)
-		font-size: 14px
+		font-size: 16px
+.container
+	max-width: $maxwidth
+	margin: auto
+
+h1,
+h2,
+h3,
+h4,
+h5
+	font-family: $proximanova
+
+p
+	font-family: $tisa
+
+// Helper classes
+.post-title,
+.author
+	text-align: center
+	font-family: $proximanova
+.post-title
+	font-size: 2rem
+.proxima-nova
+	font-family: $proximanova
 
 // Header Styles
 header
@@ -37,59 +67,5 @@ header
 		height: 10rem
 		width: 10rem
 
-// Navigation Styles
-nav
-	ul#menu-main-menu
-		display: flex
-		list-style: none
-		justify-content: space-around
-		padding: 1rem 0
-		max-width: $maxwidth
-		margin: auto
-		border-bottom: 2px dashed $white
-		li a
-			color: $white
-			text-decoration: none
-			font-size: 1.5rem
-			&:hover
-				color: $lightgrey
-		@media screen and (max-width: $breakmedium)
-			display: block
-			li a
-				display: block
-				text-align: center
-				padding-bottom: .5rem
 
-// Footer Styles
-footer
-	background: $grey
-	width: 100%
-	.footer-content
-		width: 100%
-		max-width: $maxwidth
-		margin: auto
-		display: flex
-		justify-content: space-around
-	.footer-copyright
-		color: $white
-		line-height: 2rem
-	ul.social-links
-		list-style: none
-		padding: 0
-		li
-			display: inline-block
-			a i
-				color: $white
-				display: inline-block
-				vertical-align: middle
-				padding: 0 .5rem
-				&:hover
-					color: $lightgrey
-	@media screen and (max-width: $breakmedium)
-		padding: .5rem 0
-		.footer-content
-			display: block
-			.footer-copyright,
-			.social-links
-				text-align: center
-				margin: 0
+
