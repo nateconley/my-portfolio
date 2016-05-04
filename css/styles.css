@@ -125,6 +125,47 @@ footer {
 #about-copy {
   width: 100%; }
 
+.blog-category-list {
+  list-style: none;
+  text-align: center;
+  padding: 0; }
+  .blog-category-list ul {
+    list-style: none;
+    padding: 0; }
+    .blog-category-list ul li {
+      display: inline;
+      background: #29ABE2;
+      margin: 0 1rem 1rem 1rem;
+      padding: .25rem; }
+      .blog-category-list ul li:hover {
+        background: #FF5F5F; }
+      .blog-category-list ul li a {
+        color: #FFFFFF;
+        text-decoration: none; }
+
+.blog-preview {
+  padding: 1rem 0;
+  border-bottom: 2px dashed #29ABE2; }
+  .blog-preview a {
+    text-decoration: none; }
+  .blog-preview h3 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 0 0 1rem 0;
+    text-decoration: none;
+    color: #000000; }
+  .blog-preview img {
+    width: 50%;
+    height: auto;
+    margin: 0 25%;
+    border: 3px solid #000000;
+    border-radius: 6px; }
+  .blog-preview:hover h3 {
+    color: #29ABE2; }
+  .blog-preview:hover img {
+    -webkit-filter: brightness(0.9);
+    filter: brightness(0.9); }
+
 .single-content img {
   display: block;
   margin: auto;

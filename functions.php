@@ -3,6 +3,18 @@
 add_theme_support('menus');
 add_theme_support('post-thumbnails');
 
+function register_theme_sidebar() {
+
+	register_sidebar(
+
+		array(
+			'name' => __('Blog Sidebar')
+ 		)
+	);
+}
+
+add_action( 'init', 'register_theme_sidebar' );
+
 function register_theme_menus() {
 
 	register_nav_menus(

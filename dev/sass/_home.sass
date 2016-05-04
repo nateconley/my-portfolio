@@ -1,0 +1,41 @@
+.blog-category-list
+	list-style: none
+	text-align: center
+	padding: 0
+	ul
+		list-style: none
+		padding: 0
+		li
+			display: inline
+			background: $blue
+			margin: 0 1rem 1rem 1rem
+			padding: .25rem
+			&:hover
+				background: $red
+			a
+				color: $white
+				text-decoration: none
+
+.blog-preview
+	padding: 1rem 0
+	border-bottom: 2px dashed $blue
+	a
+		text-decoration: none
+	h3
+		font-size: 3rem
+		text-align: center
+		margin: 0 0 1rem 0
+		text-decoration: none
+		color: $black
+	img
+		width: 50%
+		height: auto
+		margin: 0 25%
+		border: $image-border
+		border-radius: $image-border-radius
+	&:hover
+		h3
+			color: $blue
+		img
+			-webkit-filter: brightness(.9)
+			filter: brightness(.9)
