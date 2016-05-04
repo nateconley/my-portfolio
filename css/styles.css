@@ -175,6 +175,11 @@ footer {
 .contact-form {
   width: 50%;
   margin: auto; }
+  .contact-form input[type='submit'] {
+    background: #29ABE2;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer; }
   .contact-form p span input {
     width: 100%; }
   @media screen and (max-width: 650px) {
