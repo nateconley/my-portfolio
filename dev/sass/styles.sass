@@ -9,17 +9,22 @@ $black: #000000
 $proximanova : 'proxima-nova', sans-serif
 $tisa: 'ff-tisa-web-pro', serif
 
-$maxwidth: 1000px
+$maxwidth: 1200px
 
 $breakmedium: 650px
 $breaksmall: 400px
+
+$image-border: 3px solid $black
+$image-border-radius: 6px
 
 // Imports
 @import "header"
 @import "navigation"
 @import "footer"
 @import "front-page"
+@import "about"
 @import "single"
+@import "portfolio"
 @import "error-page"
 
 
@@ -36,6 +41,14 @@ body
 	max-width: $maxwidth
 	margin: auto
 	padding: 0 1.5rem
+
+hr.title-break
+	height: .25rem
+	background: $blue
+	border: none
+
+p a
+	color: $blue
 
 // Font-family
 h1,

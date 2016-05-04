@@ -11,10 +11,13 @@
 	<div class="page-title">
 		<h2><?php wp_title($sep = ''); ?></h2>
 	</div>
+	<hr class="title-break">
 
 	<?php the_post(); ?>
 
-	<p><?php the_content(); ?></p>
+	<div id="about-picture"><?php the_post_thumbnail(); ?></div>
+
+	<div id="about-copy"><?php the_content(); ?></div>
 
 </div>
 

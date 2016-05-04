@@ -1,0 +1,28 @@
+.portfolio-gallery
+	display: flex
+	justify-content: space-around
+	flex-wrap: wrap
+	padding-bottom: 2rem
+	.portfolio-item
+		margin: 1rem
+		a
+			text-decoration: none
+			h3
+				text-align: center
+				margin: 1rem 0
+				color: $black
+			img
+				width: 20rem
+				height: auto
+				border: $image-border
+				border-radius: $image-border-radius
+				@media screen and (max-width: $breakmedium)
+					width: 18rem
+				@media screen and (max-width: $breaksmall)
+					width: 16rem
+			&:hover
+				h3
+					color: $blue
+				img
+					-webkit-filter: brightness(.9)
+					filter: brightness(.9)
