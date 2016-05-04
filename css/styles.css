@@ -145,11 +145,13 @@ footer {
 
 .blog-preview {
   padding: 1rem 0;
-  border-bottom: 2px dashed #29ABE2; }
-  .blog-preview a {
+  border-top: 2px dashed #29ABE2; }
+  .blog-preview a.no-underline {
     text-decoration: none; }
+  .blog-preview a.read-more {
+    color: #29ABE2; }
   .blog-preview h3 {
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
     margin: 0 0 1rem 0;
     text-decoration: none;
@@ -167,7 +169,7 @@ footer {
     filter: brightness(0.9); }
   @media screen and (max-width: 650px) {
     .blog-preview h3 {
-      font-size: 2rem; }
+      font-size: 1.5rem; }
     .blog-preview img {
       width: 80%;
       margin: 0 10%; } }

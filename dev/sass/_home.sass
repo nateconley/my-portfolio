@@ -18,11 +18,13 @@
 
 .blog-preview
 	padding: 1rem 0
-	border-bottom: 2px dashed $blue
-	a
+	border-top: 2px dashed $blue
+	a.no-underline
 		text-decoration: none
+	a.read-more
+		color: $blue
 	h3
-		font-size: 3rem
+		font-size: 2rem
 		text-align: center
 		margin: 0 0 1rem 0
 		text-decoration: none
@@ -41,7 +43,7 @@
 			filter: brightness(.9)
 	@media screen and (max-width: $breakmedium)
 		h3
-			font-size: 2rem
+			font-size: 1.5rem
 		img
 			width: 80%
 			margin: 0 10%

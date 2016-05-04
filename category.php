@@ -2,7 +2,7 @@
 <!-- Page Title -->
 <div class="container">
 	<div class="page-title">
-		<h2><?php wp_title($sep = ''); ?></h2>
+		<h2>Category: <?php wp_title($sep = ''); ?></h2>
 	</div>
 	<hr class="title-break">
 <!-- Sidebar -->
