@@ -7,18 +7,25 @@
 	</div>
 	<hr class="title-break">
 
+<!-- Sidebar -->
+	<ul class="blog-category-list">
+		<?php dynamic_sidebar(); ?>
+	</ul>
 
-	<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+<!-- The Loop -->
+<?php if(have_posts()) : while (have_posts()) : the_post(); ?>
 
+	<div class="blog-preview">
+		<a href="<?php the_permalink(); ?>">
+			<h3><?php the_title(); ?></h3>
+			<?php the_post_thumbnail('large'); ?>
+		</a>
+	</div>
 
-	<?php the_title(); ?>
-
-	<?php the_excerpt(); ?>
-
-	<?php endwhile; else : ?>
-		<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-	<?php endif; ?>
+<?php endwhile; endif; ?>
 
 </div>
+
+
 
 <?php get_footer(); ?>
