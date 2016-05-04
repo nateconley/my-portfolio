@@ -18,7 +18,7 @@
 		<!-- Query for Posts Categorized as 'Work' -->
 		<?php
 			$args = array(
-					'category_name' => 'Work'
+					'post_type' => 'portfolio'
 				);
 
 			$work_query = new WP_Query( $args );

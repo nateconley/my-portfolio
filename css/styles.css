@@ -186,13 +186,23 @@ footer {
   .contact-form .wpcf7-response-output {
     font-family: "ff-tisa-web-pro", serif; }
 
-.single-content img {
-  display: block;
-  margin: auto;
-  min-width: 50%;
-  height: auto;
-  border: 3px solid #000000;
-  border-radius: 6px; }
+.single-content {
+  margin: 1rem 0; }
+  .single-content img {
+    display: block;
+    margin: auto;
+    min-width: 50%;
+    height: auto;
+    border: 3px solid #000000;
+    border-radius: 6px; }
+  .single-content .single-navigation {
+    text-align: center; }
+    .single-content .single-navigation p {
+      display: inline-block;
+      margin: 0 2rem; }
+    .single-content .single-navigation a {
+      color: #29ABE2;
+      text-align: center; }
 
 .portfolio-gallery {
   display: flex;
