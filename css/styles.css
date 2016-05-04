@@ -172,6 +172,20 @@ footer {
       width: 80%;
       margin: 0 10%; } }
 
+.contact-form {
+  width: 50%;
+  margin: auto; }
+  .contact-form p span input {
+    width: 100%; }
+  @media screen and (max-width: 650px) {
+    .contact-form {
+      width: 75%; } }
+  @media screen and (max-width: 400px) {
+    .contact-form {
+      width: 80%; } }
+  .contact-form .wpcf7-response-output {
+    font-family: "ff-tisa-web-pro", serif; }
+
 .single-content img {
   display: block;
   margin: auto;

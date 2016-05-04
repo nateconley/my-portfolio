@@ -12,6 +12,14 @@
 		<h2><?php wp_title($sep = ''); ?></h2>
 	</div>
 	<hr class="title-break">
+
+
+	<?php the_post(); ?>
+	<div class="contact-form">
+		<?php the_content(); ?>
+	</div>
+
+
 </div>
 
 <?php get_footer(); ?>
