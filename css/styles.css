@@ -199,6 +199,7 @@ footer {
     display: block;
     margin: auto;
     min-width: 50%;
+    max-width: 80%;
     height: auto;
     border: 3px solid #000000;
     border-radius: 6px; }

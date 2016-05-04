@@ -1,9 +1,3 @@
-<?php
-/*
-	Template Name: Work Item
-*/
-?>
-
 <?php get_header(); ?>
 
 <?php the_post(); ?>
@@ -16,7 +10,7 @@
 
 		<hr class="title-break">
 
-		<p><?php the_content(); ?></p>
+		<p class="the-content"><?php the_content(); ?></p>
 
 		<div class="single-navigation">
 			<?php previous_post_link('<p>Prev: %link</p>'); ?>
