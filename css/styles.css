@@ -182,7 +182,8 @@ footer {
     border: none;
     color: #FFFFFF;
     cursor: pointer; }
-  .contact-form p span input {
+  .contact-form p span input,
+  .contact-form p span textarea {
     width: 100%; }
   @media screen and (max-width: 650px) {
     .contact-form {
