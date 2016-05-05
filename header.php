@@ -10,7 +10,7 @@
 	</head>
 	<header>
 		<h1>Nate Conley</h1>
-		<img src="/portfolio-wp/wp-content/uploads/2016/05/nate-conley-logo-main.png" alt="Nate Conley Logo">
+		<a href="<?php bloginfo('url'); ?>"><img src="/portfolio-wp/wp-content/uploads/2016/05/nate-conley-logo-main.png" alt="Nate Conley Logo"></a>
 		<nav>
 			<?php
 				$defaults = array(
